@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white">
-    <header class="fixed top-0 w-full bg-gray-800 py-4 px-6 z-30">
+    <header class="fixed top-0 w-full bg-transparent py-4 px-6 z-30">
         <nav class="flex justify-between items-center max-w-6xl mx-auto">
             <h1 class="text-2xl font-bold text-yellow-400">The Jukebox Boogie Club</h1>
             <div class="flex items-center gap-2">
@@ -22,7 +22,7 @@
     </header>
 
     <!-- Banner -->
-    <div class="w-full h-screen" style="background-image: url('afbeeldingen/banner.jpeg'); background-size: cover; background-position: center;"></div>
+    <div class="w-full h-screen" style="background-image: url('afbeeldingen/banner.jpeg'); background-size: cover; background-position: center; position: fixed; top: 0; left: 0; z-index: 10;"></div>
 
     <!-- Slide-out Menu Overlay -->
     <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-<main>
+<main style="padding-top: 100vh;">
         <section id="home" class="max-w-6xl mx-auto py-16 px-6">
             <h2 class="text-4xl font-bold mb-8 text-center">Welkom bij The Jukebox Boogie Club</h2>
             <div class="flex flex-col md:flex-row items-center gap-8">
